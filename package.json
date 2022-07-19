@@ -4,7 +4,8 @@
   "description": "Backend for DB queries API",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon server.js -L"
   },
   "repository": {
     "type": "git",
@@ -15,5 +16,14 @@
   "bugs": {
     "url": "https://github.com/CameronTwiggs/Ecom/issues"
   },
-  "homepage": "https://github.com/CameronTwiggs/Ecom#readme"
+  "homepage": "https://github.com/CameronTwiggs/Ecom#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.1",
+    "mysql": "^2.18.1",
+    "node-fetch": "^3.2.9"
+  },
+  "devDependencies": {
+    "nodemon": "^1.4.1"
+  }
 }
