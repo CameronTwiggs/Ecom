@@ -16,11 +16,11 @@ app.listen(port, () => console.log(`Listening on port ${port}`));
 
 // connects to mysql database
 const connection = mysql.createConnection({
-    host: process.env.db-host,
-    user: process.env.db-user,
-    port:  process.env.db-port,
-    password: process.env.db-password,
-    database: process.env.db-database 
+    host: process.env.DB_host,
+    user: process.env.DB_user,
+    port:  process.env.DB_port,
+    password: process.env.DB_password,
+    database: process.env.DB_database 
 });
 
 // pulls data from mysql database
