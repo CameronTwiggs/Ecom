@@ -30,3 +30,11 @@ app.get('/', (req, res) => {
         res.send(rows);
     });
 });
+
+app.get('/:id', (req, res) => {
+    connection.query('SELECT * FROM products WHERE id = ?', [req.params.id], (err, rows, fields) => {
+        if (err) throw err;
+        res.send(rows);
+    });
+});
+
