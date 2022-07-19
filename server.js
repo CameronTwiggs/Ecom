@@ -34,7 +34,12 @@ app.get('/', (req, res) => {
 app.get('/:id', (req, res) => {
     connection.query('SELECT * FROM products WHERE id = ?', [req.params.id], (err, rows, fields) => {
         if (err) throw err;
-        res.send(rows);
+        else if (rows == []) {
+            res.status(404).send('Product not found');
+        }
+        else {
+            res.send(rows);
+        }
     });
 });
 
