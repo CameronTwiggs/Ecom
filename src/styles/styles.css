@@ -81,7 +81,7 @@ header {
 /* ============== */
 
 .hero {
-	background-image: url("../images/misc/stars.jpg");
+	background-image: url("~/public/images/misc/stars.jpg");
 	color: var(--green);
 	font-size: 3em;
 	text-align: center;
@@ -137,6 +137,7 @@ header {
 
 .intro img {
 	max-height: 70%;
+	max-width: 30%;
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 	border-radius: 20px;
 	margin: 3em;
@@ -241,7 +242,7 @@ header {
 }
 
 .form__image {
-	background-image: url("../images/misc/NullLogo.png");
+	background-image: url("~/public/images/misc/NullLogo.png");
 	background-size: contain;
 	background-repeat: no-repeat;
 	background-position: center;
