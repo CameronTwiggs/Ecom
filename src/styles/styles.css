@@ -103,13 +103,13 @@ header {
 
 
 .main__section {
+
 	font-size: 20px;
 	height: 100vh;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-
 }
 
 /* Introduction */
