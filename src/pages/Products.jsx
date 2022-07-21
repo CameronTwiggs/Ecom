@@ -9,9 +9,7 @@ export default function Products() {
             .then(response => response.json())
             .then(data => {
                 setProducts(data);
-                console.log(data)
             })
-            .then(console.log(products))
     },[])
         return (
                 <section className="main__section product__main">

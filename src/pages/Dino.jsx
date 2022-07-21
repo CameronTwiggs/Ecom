@@ -1,4 +1,4 @@
-export default function Dino(Str) {
+export default function Dino() {
     return (
         <div>
             <img src="https://c.tenor.com/XDXQIFHM6ukAAAAC/jurassic-world-jurassic-world-camp-cretaceous.gif" alt="DINO POWER"/>
