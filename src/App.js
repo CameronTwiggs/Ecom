@@ -3,6 +3,7 @@ import Contact from "./pages/Contact.jsx";
 import Products from "./pages/Products.jsx";
 import Navbar from "./components/Navbar.jsx";
 import Footer from "./components/Footer.jsx";
+import Dino from "./pages/Dino.jsx";
 import "./styles/styles.css";
 
 function App() {
@@ -15,6 +16,9 @@ function App() {
   }
   else if (window.location.pathname === "/products") {
    component = <Products />;
+  }
+  else if (window.location.pathname === "/dino") {
+    component = <Dino />;
   }
 
 
