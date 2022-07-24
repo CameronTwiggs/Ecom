@@ -1,5 +1,6 @@
 
-import ProductCard from "../components/ProductCard"
+import ProductCard from "../components/ProductCard.jsx"
+
 import { useEffect, useState } from "react";
 
 export default function Products() {
@@ -10,16 +11,16 @@ export default function Products() {
             .then(data => {
                 setProducts(data);
             })
-    },[])
-        return (
-                <section className="main__section product__main">
-                    <h1 className="main__title terminal terminal--purple">~$ Shop...</h1>
-                    <ul className="product__list">
-                        {products.map(product => {
-                            return <ProductCard key={product.id} products={product} />
-                        }
-                        )}
-                    </ul>
-                </section>
-        )
+    }, [])
+    return (
+        <section className="main__section product__main">
+            <h1 className="main__title terminal terminal--purple">~$ Shop...</h1>
+            <ul className="product__list">
+                {products.map(product => {
+                    return <ProductCard key={product.id} products={product} />
+                }
+                )}
+            </ul>
+        </section>
+    )
 }

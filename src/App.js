@@ -9,7 +9,7 @@ import "./styles/styles.css";
 function App() {
   let component; 
   if (window.location.pathname === "/") {
-    component =  <Home />;
+    component = <Home />;
   }
   else if (window.location.pathname === "/contact") {
     component = <Contact />;

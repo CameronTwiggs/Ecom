@@ -30,7 +30,7 @@ export default function Home() {
       <p className="shop__text">
         Nothing... too crazy we sell stickers for developers
       </p>
-      <a href="./pages/product.html" className="btn btn--purple">
+      <a href="/products" className="btn btn--purple">
         Products
       </a>
     </div>
@@ -44,7 +44,7 @@ export default function Home() {
       Questions, Comments, Feedback? Maybe even a buisness inquirery? Feel free
       to reach out.
     </p>
-    <a className="btn btn--blue" href="./pages/contact.html">
+    <a className="btn btn--blue" href="/contact">
       Call the Void
     </a>
   </section>
