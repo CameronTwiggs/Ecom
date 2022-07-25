@@ -8,6 +8,7 @@
 	--yellow: #ffd166;
 	--purple: #914ecf;
 	--sitewidth: 100%;
+	--mobilewidth: 700px;
 }
 
 
@@ -147,7 +148,6 @@ header * {
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
-
 }
 
 .hero__title {
@@ -160,7 +160,6 @@ header * {
 
 
 .main__section {
-
 	font-size: 20px;
 	height: 100vh;
 	display: flex;
@@ -232,6 +231,13 @@ header * {
 .contact__text {
 	padding: 3em;
 }
+
+
+
+@media screen and (max-width: 700px) {
+	
+}
+
 
 /* SHOP PAGE STARTS HERE */
 
@@ -330,7 +336,7 @@ header * {
 	display: flex;
 	flex-direction: column;
 	align-content: center;
-	width: 25%;
+	width: 70%;
 	min-width: 50%;
 	height: 65%;
 	padding: 1em;
