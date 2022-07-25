@@ -17,7 +17,7 @@ export default function Products() {
             <h1 className="main__title terminal terminal--purple">~$ Shop...</h1>
             <ul className="product__list">
                 {products.map(product => {
-                    return <ProductCard key={product.id} products={product} />
+                    return <ProductCard key={product.id} products={product} settings={"li"}/>
                 }
                 )}
             </ul>

@@ -1,3 +1,6 @@
+import ProuductCarousel from '../components/ProductCarousel.jsx';
+
+
 
 export default function Home() {
     return (
@@ -49,5 +52,6 @@ export default function Home() {
     </a>
   </section>
   <div className="divider div-transparent div-arrow-down" />
+  <ProuductCarousel /> 
 </>
 )}
