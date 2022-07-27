@@ -31,6 +31,22 @@ app.get('/', (req, res) => {
     });
 });
 
+
+app.get('/low', (req, res) => {
+    connection.query('SELECT * FROM products ORDER BY price ASC;', (err, rows, fields) => {
+        if (err) throw err;
+        res.send(rows);
+    });
+});
+
+
+app.get('/high', (req, res) => {
+    connection.query('SELECT * FROM products ORDER BY price DESC;', (err, rows, fields) => {
+        if (err) throw err;
+        res.send(rows);
+    });
+});
+
 app.get('/:id', (req, res) => {
     connection.query('SELECT * FROM products WHERE id = ?', [req.params.id], (err, rows, fields) => {
         if (err) throw err;
