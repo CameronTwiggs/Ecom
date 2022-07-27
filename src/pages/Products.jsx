@@ -14,14 +14,20 @@ export default function Products() {
         fetchData();
     }, [filter])
 
-    
+    const updateData = (filter) => {
+        setFilter(filter);
+        document.getElementsByTagName("")
+    }
+
+
     return (
         <section className="main__section product__main">
             <h1 className="main__title terminal terminal--purple">~$ Shop...</h1>
-            <input type="text" />
-            <button onClick={() => setFilter("low")}>Low</button>
-            <button onClick={() => setFilter("high")}>High</button>
-            <button onClick={() => setFilter("")}>default</button>
+            <div className="filter__wrapper">
+                <button className="filter__button" onClick={() => updateData("low")}>Low-High</button>
+                <button className="filter__button" onClick={() => updateData("high")}>High-Low</button>
+                <button className="filter__button" onClick={() => updateData("")}>Default</button>
+            </div>
             <ul className="product__list">
                 {products.map(product => {
                     return <ProductCard key={product.id} products={product} settings={"li"}/>

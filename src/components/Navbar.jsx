@@ -13,6 +13,9 @@ export default function Navbar() {
             <li>
               <button  onClick={() => window.location.pathname = "/products"}>Products</button>
             </li>
+            <li>
+              <button  onClick={() => window.location.pathname = "/Testimonial"}>Testimonial</button>
+            </li>
           </ul>
         </nav>
         <button href="" className="header__cta">

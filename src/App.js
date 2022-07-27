@@ -1,6 +1,7 @@
 import Home from "./pages/Home.jsx";
 import Contact from "./pages/Contact.jsx";
 import Products from "./pages/Products.jsx";
+import Testimonial from "./pages/Testimonial.jsx";
 import Navbar from "./components/Navbar.jsx";
 import Footer from "./components/Footer.jsx";
 import Dino from "./pages/Dino.jsx";
@@ -19,6 +20,9 @@ function App() {
   }
   else if (window.location.pathname === "/dino") {
     component = <Dino />;
+  }
+  else if (window.location.pathname === "/dino") {
+    component = <Testimonial />;
   }
 
 
