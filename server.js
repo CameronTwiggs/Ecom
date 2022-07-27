@@ -47,6 +47,21 @@ app.get('/', (req, res) => {
     }
 });
 
+app.post('/contacts', (req, res) => {
+    connection.query("INSERT INTO contacts SET ?", req.body, (err, rows, fields) => {
+        if (err) throw err;
+        res.redirect('back');
+    })
+});
+
+app.get("/contacts", (req, res) => {
+    connection.query("SELECT * FROM contacts", (err, rows, fields) => {
+        if (err) throw err;
+        res.send(rows);
+    })
+});
+
+
 
 app.get('/low', (req, res) => {
     connection.query('SELECT * FROM products ORDER BY price ASC;', (err, rows, fields) => {
