@@ -14,7 +14,7 @@ export default function Navbar() {
               <button  onClick={() => window.location.pathname = "/products"}>Products</button>
             </li>
             <li>
-              <button  onClick={() => window.location.pathname = "/Testimonial"}>Testimonial</button>
+              <button  onClick={() => window.location.pathname = "/testimonials"}>Testimonial</button>
             </li>
           </ul>
         </nav>

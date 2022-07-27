@@ -21,7 +21,7 @@ function App() {
   else if (window.location.pathname === "/dino") {
     component = <Dino />;
   }
-  else if (window.location.pathname === "/dino") {
+  else if (window.location.pathname === "/testimonials") {
     component = <Testimonial />;
   }
 
