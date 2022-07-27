@@ -49,6 +49,7 @@ app.get('/', (req, res) => {
 
 app.post('/contacts', (req, res) => {
     connection.query("INSERT INTO contacts SET ?", req.body, (err, rows, fields) => {
+        console.log(req.body);
         if (err) throw err;
         res.redirect('back');
     })
