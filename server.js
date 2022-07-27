@@ -96,3 +96,12 @@ app.get('/:id', (req, res) => {
         }
     });
 });
+
+
+
+app.post("/test", (req, res) => {
+
+    console.log(req);
+    res.send(req);
+
+})
