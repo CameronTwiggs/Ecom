@@ -25,16 +25,35 @@ const connection = mysql.createConnection({
 
 // pulls data from mysql database
 app.get('/', (req, res) => {
-    connection.query('SELECT * FROM products', (err, rows, fields) => {
-        if (err) throw err;
-        res.send(rows);
-    });
+    if (req.query.searchQuery) {
+
+        connection.query('SELECT * FROM products WHERE title = ?', [req.query.searchQuery] ,(err, rows, fields) => {
+            if (err) throw err;
+            else if (rows == []) {
+                res.status(404).send('Product not found');
+            }
+            res.send(rows);
+        });
+
+    }
+    else {
+        connection.query('SELECT * FROM products', (err, rows, fields) => {
+            if (err) throw err;
+            else if (rows == []) {
+                res.status(404).send('Product not found');
+            }
+            res.send(rows);
+        });
+    }
 });
 
 
 app.get('/low', (req, res) => {
     connection.query('SELECT * FROM products ORDER BY price ASC;', (err, rows, fields) => {
         if (err) throw err;
+        else if (rows == []) {
+            res.status(404).send('Product not found');
+        }
         res.send(rows);
     });
 });
@@ -43,6 +62,9 @@ app.get('/low', (req, res) => {
 app.get('/high', (req, res) => {
     connection.query('SELECT * FROM products ORDER BY price DESC;', (err, rows, fields) => {
         if (err) throw err;
+        else if (rows == []) {
+            res.status(404).send('Product not found');
+        }
         res.send(rows);
     });
 });
@@ -58,4 +80,3 @@ app.get('/:id', (req, res) => {
         }
     });
 });
-
