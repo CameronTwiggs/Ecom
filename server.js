@@ -2,7 +2,7 @@ const fetch = import('node-fetch');
 const cors = require("cors")
 const express = require('express');
 const mysql = require('mysql');
-
+const bodyParser = require("body-parser")
 
 
 // starts express server
