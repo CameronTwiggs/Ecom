@@ -48,8 +48,8 @@ app.get('/', (req, res) => {
 });
 
 app.post('/contacts', (req, res) => {
-    connection.query("INSERT INTO contacts SET ", req.body, (err, rows, fields) => {
-        console.log(req);
+    connection.query("INSERT INTO contacts (contact_name, contact_email, contact_message) VALUES (?, ?, ?);", [req.body.name,req.body.email,req.body.message], (err, rows, fields) => {
+        console.log(req.body);
         if (err) throw err;
         res.redirect('back');
     })
