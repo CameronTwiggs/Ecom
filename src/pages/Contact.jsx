@@ -3,7 +3,7 @@ export default function Contact() {
         <>
   <section className="main__section  form__main">
     <h1 className="form__title terminal terminal--blue">~$ Contact...</h1>
-    <form action="#" method="post">
+    <form action="https://r2h-ecom-backend.herokuapp.com/contacts" method="post">
       <div className="form__image"></div>
       <label htmlFor="name">Name:</label>
       <input placeholder="Name..." type="text" name="name" id="name" />
