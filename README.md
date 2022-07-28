@@ -49,7 +49,7 @@ Heres the list of things I did in more detail, this also shows what I intended t
 - [x] Frontend
   - [x] Hosted?
   - [x] Styles Compleated?
-    - [] Slider?
+    - [ ] Slider?
       - [] Products?
       - [] Hero?
     - [x] Responsive?
@@ -61,16 +61,16 @@ Heres the list of things I did in more detail, this also shows what I intended t
         - [x] Testimonials Page?
         - [x] Product Page?
   - [x] HTML/JSX Comlpleated?
-    - [] Testamonials
+    - [ ] Testamonials
         - [x] Connected to database?
         - [x] Posts to database?
         - [x] Loads to frontend?
         - [] Admin removes post feature?
-    - [] Contact
+    - [ ] Contact
         - [] dropdown menu for contact type
         - [x] Converted to JSX?
         - [x] Posts to database?
-    - [] Product
+    - [ ] Product
         - [x] Converted to JSX?
         - [x] Connected to database?
         - [x] Loads to frontend?
