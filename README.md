@@ -3,6 +3,7 @@
 Road To Hire Ecommerce Project V2
 This is a project that I undertook during my time at [Road To Hire](https://www.roadtohire.com/).
 
+Github Repository: [Repository](https://www.github.com/CameronTwiggs/ecom)
 Developers:
 
 - Cameron Twiggs
@@ -26,6 +27,8 @@ Man do I have things to talk about, first lets look at the requirements
 - [x] Navigation and Footer
     - [x] isRendered?
 
+
+Heres the list of things I did in more detail, this also shows what I intended to do, but ran out of time.
 
 
 ## To-Do List
