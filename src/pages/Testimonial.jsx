@@ -20,10 +20,13 @@ export default function Testimonial() {
     }
     , []);
     return (
-        <ul className="testimonial__list">
-            {loading ? <h1>Loading...</h1> : null}
-            {error ? <h1>Error</h1> : null}
-            {testimonials.map(testimonial => <TestimonialCard key={testimonial.id} testimonial={testimonial}/>)}
-        </ul>
+        <>
+        <h1 className="testimonial__title form__title terminal">  ~$Testimonials...</h1>
+            <ul className="testimonial__list">
+                {loading ? <h1>Loading...</h1> : null}
+                {error ? <h1>Error</h1> : null}
+                {testimonials.map(testimonial => <TestimonialCard key={testimonial.id} testimonial={testimonial}/>)}
+            </ul>
+        </>
     )
 }
