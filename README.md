@@ -106,4 +106,4 @@ I also managed to help a lot of my peers~ with their projects. This boosted my l
 ### Misc Notes
 
 [Live Site](https://main.dg98il3w3gmtx.amplifyapp.com/)
-[Backend Endpoint : https://r2h-ecom-backend.herokuapp.com/](https://r2h-ecom-backend.herokuapp.com/)
+[Backend Endpoint](https://r2h-ecom-backend.herokuapp.com/)
