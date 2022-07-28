@@ -1,3 +1,4 @@
+
 # Ecommerce Project V2
 
 Road To Hire Ecommerce Project V2
@@ -50,8 +51,8 @@ Heres the list of things I did in more detail, this also shows what I intended t
   - [x] Hosted?
   - [x] Styles Compleated?
     - [ ] Slider?
-      - [] Products?
-      - [] Hero?
+      - [x] Products?
+      - [ ] Hero?
     - [x] Responsive?
         - [x] Navigation?
         - [x] Footer?
@@ -65,22 +66,22 @@ Heres the list of things I did in more detail, this also shows what I intended t
         - [x] Connected to database?
         - [x] Posts to database?
         - [x] Loads to frontend?
-        - [] Admin removes post feature?
+        - [ ] Admin removes post feature?
     - [ ] Contact
-        - [] dropdown menu for contact type
+        - [ ] dropdown menu for contact type
         - [x] Converted to JSX?
         - [x] Posts to database?
     - [ ] Product
         - [x] Converted to JSX?
         - [x] Connected to database?
         - [x] Loads to frontend?
-        - [] Pagination for products?
+        - [ ] Pagination for products?
     - [x] Home
         - [x] Connected to database?
         - [x] Posts to database?
         - [x] Loads to frontend?
   - [x] File Sturcture Sorted?
-  - [] Touch up Code
+  - [ ] Touch up Code
 
 
 
@@ -90,7 +91,7 @@ The way we have the project layed out goes as follows.
 
 ![Project Structure](https://zellwk.com/images/2019/frontend-vs-backend/server.png)
 
-Frontend - Amplify ("main" branch). <====> Backend - Heroku ("backend" branch) <====> Database - MySQL 
+Frontend - Amplify ("main" branch). <----> Backend - Heroku ("backend" branch) <----> Database - MySQL 
 
 
 ## Project Notes
