@@ -231,6 +231,54 @@ header * {
 	padding: 3em;
 }
 
+
+
+@media screen and (max-width: 700px) {
+	.main__section {
+		flex-direction: column;
+	}
+
+	.main__section * {
+		text-align: center;
+	}
+
+	.main__section img {
+		display: none;
+	}
+
+	.intro__title {
+		margin: 1em 0.2em;
+		font-size: 3em;
+	}
+
+	.intro__text{
+		margin: 1em;
+	}
+
+	.shop__title {
+		margin: 1em 0.2em;
+		font-size: 3em;
+	}
+
+	.shop__text {
+		margin:0;
+	}
+
+	.shop__wrapper {
+		max-width: 100%;
+	}
+
+	.testimonials__section {
+		display: none;
+	}
+
+	.divider {
+		display: none;
+	}
+
+}
+
+
 /* Form Page */
 
 .form__subtitle {
@@ -708,4 +756,8 @@ a.btn:active {
 	100% {
 		transform: scale(1);
 	}
+}
+
+.carousel.carousel-slider {
+	margin: 0 auto;
 }

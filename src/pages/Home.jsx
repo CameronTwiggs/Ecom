@@ -38,6 +38,9 @@ export default function Home() {
       </a>
     </div>
   </section>
+  <section className="testimonials__section main__section">
+    <ProuductCarousel /> 
+  </section>
   <div className="divider div-transparent div-arrow-down" />
   <section className="contact main__section">
     <h2 className="contact__title terminal terminal--blue ">
@@ -51,7 +54,7 @@ export default function Home() {
       Call the Void
     </a>
   </section>
-  <div className="divider div-transparent div-arrow-down" />
-  <ProuductCarousel /> 
+  
+  
 </>
 )}

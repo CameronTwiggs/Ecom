@@ -44,11 +44,11 @@ export default class ProuductCarousel extends Component {
     render() {
         return (
             this.getRandomProduct(),
-            <Carousel>
-             {this.state.randomProducts.map(product => {
-                return <ProductCard key={product.id} products={product} settings={"div"}/>
-             })}
-            </Carousel>
+                <Carousel autoPlay width={"50%"}>
+                {this.state.randomProducts.map(product => {
+                    return <ProductCard key={product.id} products={product} settings={"div"}/>
+                })}
+                </Carousel>
         );
     }
 };
