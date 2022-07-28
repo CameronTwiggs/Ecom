@@ -5,11 +5,20 @@ import { useEffect, useState } from "react";
 export default function Products() {
     const [products, setProducts] = useState([]);
     const [filter, setFilter] = useState("");
+    const [loading, setLoading] = useState(true);
+    const [error, setError] = useState(null);
+
     useEffect(() => {
         const fetchData = async () => {
-            const result = await fetch(`https://r2h-ecom-backend.herokuapp.com/${filter}`)
-            const data = await result.json();
-            setProducts(data);
+            try {
+                const result = await fetch(`https://r2h-ecom-backend.herokuapp.com/${filter}`)
+                const data = await result.json();
+                setProducts(data);
+                setLoading(false);
+            } catch (error) {
+                setError(error);
+                
+            }
         }
         fetchData();
     }, [filter])
@@ -29,6 +38,8 @@ export default function Products() {
                 <button className="filter__button" onClick={() => updateData("")}>Default</button>
             </div>
             <ul className="product__list">
+                {loading ? <h1>Loading...</h1> : null}
+                {error ? <h1>Error</h1> : null}
                 {products.map(product => {
                     return <ProductCard key={product.id} products={product} settings={"li"}/>
                 })}
