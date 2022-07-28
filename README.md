@@ -90,7 +90,7 @@ The way we have the project layed out goes as follows.
 
 ![Project Structure](https://zellwk.com/images/2019/frontend-vs-backend/server.png)
 
-Database - MySQL <====> Backend - Heroku ("backend" branch) <====> Frontend - Amplify ("main" branch).
+Frontend - Amplify ("main" branch). <====> Backend - Heroku ("backend" branch) <====> Database - MySQL 
 
 
 ## Project Notes
